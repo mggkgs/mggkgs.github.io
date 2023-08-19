@@ -1,0 +1,5 @@
+var firstName = "Ghebrehiwet";
+var lastName = "Kidane";
+var fullName = firstName + " " + lastName;
+
+document.write("Full Name: " + fullName);
