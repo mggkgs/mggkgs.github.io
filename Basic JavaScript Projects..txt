@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My JavaScript Project</title>
+</head>
+<body>
+
+<script>
+    // Your JavaScript code will go here
+</script>
+
+</body>
+</html>
+
+alert("Hello, World!");
+
+
+
+
+
+
