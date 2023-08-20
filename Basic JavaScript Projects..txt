@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My JavaScript Project</title>
+    <title>Basic JavaScript Projects Assignment</title>
+     <meta charset="utf-8">
+     script scr="js/main.js"></script>
 </head>
 <body>
+</body>
+</html>
+//main.js
+
+//window.alert method
+ window.alert("Hello,world!");
+ //document.write("for the last time, hello, world");
+ //creating two variables
+ var sent1 = "this is the beginning of thestring";
+ var sent2 =" and this is the end of the string";
+ //displaying the variables using the document.write method
+ document.write(sent1 + sent2);
+ //an expression
+ document.write(33 * 84);
+
 
 <script>
     // Your JavaScript code will go here
@@ -13,6 +30,9 @@
 </html>
 
 alert("Hello, World!");
+
+
+
 
 
 
