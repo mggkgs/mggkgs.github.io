@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Pizza_CSS/Pizza.css">
+  <title>Pizza Menu</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Pizza Menu</h1>
+  </header>
+
+  <section class="menu">
+    <h2>Our Delicious Pizzas</h2>
+    <ul>
+      <li>
+        <h3>Margherita</h3>
+        <p>Classic tomato sauce, mozzarella cheese, fresh basil leaves.</p>
+        <span class="price">$10.99</span>
+      </li>
+      <li>
+        <h3>Pepperoni</h3>
+        <p>Tomato sauce, mozzarella cheese, pepperoni slices.</p>
+        <span class="price">$12.99</span>
+      </li>
+      <li>
+        <h3>Hawaiian</h3>
+        <p>Tomato sauce, mozzarella cheese, ham, pineapple.</p>
+        <span class="price">$11.99</span>
+      </li>
+      <!-- Add more pizza items here -->
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Pizza Place. All rights reserved.</p>
+  </footer>
+</body>
+</html>
