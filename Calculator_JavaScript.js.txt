@@ -1,0 +1,80 @@
+// Calculator functionality
+const display = document.querySelector(".display");
+const buttons = document.querySelectorAll(".button");
+
+let currentInput = "";
+let currentOperator = "";
+let result = 0;
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const value = button.textContent;
+    
+    if (value === "C") {
+      clear();
+    } else if (value === "=") {
+      calculate();
+    } else if (isNumber(value) || value === ".") {
+      appendToInput(value);
+    } else {
+      setOperator(value);
+    }
+    
+    updateDisplay();
+  });
+});
+
+function clear() {
+  currentInput = "";
+  currentOperator = "";
+  result = 0;
+}
+
+function calculate() {
+  if (currentInput !== "") {
+    const inputNum = parseFloat(currentInput);
+    if (currentOperator === "+") {
+      result += inputNum;
+    } else if (currentOperator === "-") {
+      result -= inputNum;
+    } else if (currentOperator === "*") {
+      result *= inputNum;
+    } else if (currentOperator === "/") {
+      result /= inputNum;
+    } else {
+      result = inputNum;
+    }
+    currentInput = "";
+    currentOperator = "";
+  }
+}
+
+function appendToInput(value) {
+  if (value === "." && currentInput.includes(".")) {
+    return;
+  }
+  currentInput += value;
+}
+
+function setOperator(operator) {
+  if (currentInput !== "") {
+    calculate();
+    currentOperator = operator;
+  }
+}
+
+function isNumber(value) {
+  return !isNaN(value);
+}
+
+function updateDisplay() {
+  display.textContent = currentInput !== "" ? currentInput : result;
+}
+
+
+ 
+
+
+
+
+
